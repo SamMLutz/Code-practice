@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Function</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
+  </head>
+  <body>
+
+    <!-- <h1>Open the console to see the magic!</h1>
+
+    <h1>Drink Selection!</h1>
+    <hr> -->
+  
+    <!-- Here we create a generic drink-options div -->
+    <!-- <div id="drink-options"></div> -->
+
+    <!-- <h1>Click to Eat Sandwich</h1>
+  <h3 id="pbj">Peanut Butter Jelly</h3>
+  <h3 id="grilledcheese">Grilled Cheese</h3>
+  <h3 id="roastbeef">Roast Beef</h3> -->
+
+  <div class="jumbotron">
+
+    <h1 class="text-center">Generate a Random Number!</h1>
+
+    <div class="text-center">
+
+      <!-- Here we have our button for generating random numbers (#random-button) -->
+      <button id="random-button" class="btn btn-primary btn-lg"><h1><span class="fa fa-question"></span></h1></button>
+      
+    </div>
+
+  </div>
+
+  <!-- Here we have div called "random-number" where our random number will go -->
+  <h1 class="text-center" id="random-number"></h1>
+
+
+    
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+    
+    <script>
+
+     
+
+
+    // var gandalf = {
+    //   "real name": "Gandalf",
+    //   "age (est)": 11000,
+    //   "race": "Maia",
+    //   "haveRetirementPlan": true,
+    //   "aliases": [
+    //     "Greyhame",
+    //     "Stormcrow",
+    //     "Mithrandir",
+    //     "Gandalf the Grey",
+    //     "Gandalf the White"
+    //   ]
+    // };
+
+    // // Object properties can be accessed with "bracket notation"
+    // alert("My name is " + gandalf["real name"]+ " and my race is " +gandalf.race);
+
+    // // Or with "dot notation" if the property has no spaces
+    // if (gandalf.haveRetirementPlan) {
+
+    //   // Or with a variable that matches the name of the property
+    //   var ageProperty = "age (est)";
+    //   var years = gandalf[ageProperty];
+    //   alert("My 401k has been gathering interest for " + years + " years!");
+    // }
+
+    // // You can access arrays and their properties from an object
+    // alert("I have more than " + gandalf.aliases.length + " aliases");
+
+    // // Non-existent properties return undefined
+    // alert("My designation is " + gandalf["designation"]);
+
+    
+    // if (gandalf.aliases) {
+    //     var favAlias = gandalf.aliases[1];
+
+       
+    //     alert("My favorite alias is " + favAlias);
+    // }
+
+   
+
+  
+
+
+
+
+  
+
+  
+
+    // Array holds all of the drinks available
+    // var drinkList = [
+    //   "Coffee: $5",
+    //   "Espresso: $7",
+    //   "Cappuccino: $6",
+    //   "Latte: $4",
+    //   "Tea: $3",
+    //   "Ice Coffee: $6",
+    //   "Ice Espresso: $8",
+    //   "Ice Latte: $6",
+    //   "Ice Tea: $4"
+    // ];
+
+    // 1. Create code that "grabs" the div with the matching id (#drink-options);
+    // ...
+    //  var targetDiv = document.getElementById("drink-options");
+
+
+    // ...
+
+
+    // 2. Create a for loop that creates HTML content of all the drinks using JavaScript.
+    // HINT: You will need to use each of the following methods: createElement, textContent, appendChild
+    // ...
+            // for (i=0; i < drinkList.length; i++) {
+            //   var newElem = document.createElement("p");
+            //   newElem.textContent = drinkList[i];
+            //   targetDiv.appendChild(newElem);
+            // };
+
+
+    // ...
+
+    // drinkList.forEach(function(drink) {
+    //   var newElem = document.createElement("p");
+    //           newElem.textContent = drink
+    //           targetDiv.appendChild(newElem);
+
+    // });
+
+
+    // for (i=0; i < drinkList.length; i++) {
+    //   var newElem = $("<p>");
+    //   newElem.text(drinkList[i]);
+    //   $("#drink-options").append(newElem);
+    // }
+
+
+  //  $.each(drinkList, function(i, drink) {
+  //   var newElem = $("<p>");
+  //     newElem.text(drink);
+  //     $("#drink-options").append(newElem);
+
+  //  });
+   
+
+//   $(document).ready(function() {
+
+// // VARIABLES
+// // ====================================================================
+// // Here we create variables for tracking the number of sandwiches eaten
+// // ... 
+//     var pbjCounter = 0;
+//     var gcCounter = 0;
+//     var rbCounter = 0;
+
+
+// // ...
+
+// // FUNCTIONS
+// // ====================================================================
+// // Here we create various on "click" functions which capture the clicks
+// // Inside each click event is the code to create an alert, update the counter, then show the updated count.
+// // ...
+
+//  $("#pbj").on("click" , function(){
+//    alert("You ate pbj, you fat piece")
+//    pbjCounter++
+   
+//    alert("you ate " + pbjCounter + " pbj sandwiches")
+//  });
+
+     
+
+
+// // ...
+
+// });
+
+
+$(document).ready(function() {
+  var random = Math.floor(Math.random() * 1000);
+
+// CREATE THE MISSING CODE HERE. Your code should add content to the random-number div.
+// ...
+  $("#random-button").on("click" , function() {
+    var random = Math.floor(Math.random() * 1000);
+    $("#random-number").text(random);
+
+  })
+
+
+// ...
+
+});
+
+
+
+
+
+
+    
+
+
+
+
+
+    </script>
+
+  </body>
+</html>

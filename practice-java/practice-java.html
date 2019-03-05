@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script type="text/javascript">
+
+      function tellFortune(numChild, partnerName, geoLocation, jobTitle) {
+          console.log("You will be a " + jobTitle + " in " + geoLocation + " , married to " + partnerName + " with " + numChild + " kids.")
+
+        }
+        tellFortune(4, "sam", "atlanta", "web developer");
+
+
+        function calculateDogAge(pupAge) {
+             pupAge *= 7;   
+            console.log("Your dog is " + pupAge + " years old!");
+            
+            
+        }
+        calculateDogAge(5);
+        calculateDogAge(7); 
+
+
+       
+        function calculateSupply(age, amountPerDay) {
+            var maxAge = 100
+            var totalSupply = (amountPerDay * 365) * (maxAge - age);
+            console.log("you will need " + Math.floor(totalSupply) + "  servings to last you until you are " + maxAge + "!")
+
+        }
+
+        calculateSupply(50, 5.786);
+        calculateSupply(80, 5.786);
+        calculateSupply(22, 5.768);
+
+
+        var pi = 3.141592
+        var diameter = 3
+        
+
+        function calcCircumfrence(radius) {
+            var circumfrence = (pi * 2)* radius;
+            var message = "The circumfrence is " + circumfrence;
+            console.log(message);
+
+
+        }
+
+        function calcArea(radius) {
+            var area = pi * (radius * radius);
+            var message = "The area of the circle is " + area;
+            console.log(message)
+
+        }
+        
+        calcCircumfrence(5);
+        calcArea(5);
+
+        
+
+
+    
+    </script>
+</body>
+</html>
